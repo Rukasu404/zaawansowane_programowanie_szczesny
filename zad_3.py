@@ -3,4 +3,5 @@ def even_numbers(numbers):
         if a % 2 == 0:
             print(a)
 
+
 even_numbers(list(range(1, 11)))

@@ -5,8 +5,10 @@ def numbers(numbers_array):
         array.append(a)
     return array
 
+
 def numbers2(numbers_array):
     return [a * 2 for a in numbers_array]
+
 
 list1 = [1, 2, 3, 4, 5]
 
