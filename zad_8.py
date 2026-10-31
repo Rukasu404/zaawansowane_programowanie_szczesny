@@ -3,7 +3,8 @@ import argparse
 
 basic_url = "https://api.openbrewerydb.org/v1/breweries"
 parser = argparse.ArgumentParser(description="Witaj w browarni!")
-parser.add_argument("--city", type=str, help="Pokaż piwa tylko z danego miasta")
+parser.add_argument("--city", type=str,
+                    help="Pokaż piwa tylko z danego miasta")
 args = parser.parse_args()
 
 
