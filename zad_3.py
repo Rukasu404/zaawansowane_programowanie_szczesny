@@ -5,8 +5,10 @@ class Property:
         self.price = price
         self.address = address
 
+
 class House(Property):
-    def __init__(self, area: int, rooms: int, price: float, address: str, plot: int):
+    def __init__(self, area: int, rooms: int, price: float,
+                 address: str, plot: int):
         super().__init__(area, rooms, price, address)
         self.plot = plot
 
@@ -20,7 +22,8 @@ class House(Property):
 
 
 class Flat(Property):
-    def __init__(self, area: int, rooms: int, price: float, address: str, floor: str):
+    def __init__(self, area: int, rooms: int, price: float,
+                 address: str, floor: str):
         super().__init__(area, rooms, price, address)
         self.floor = floor
 
@@ -31,6 +34,7 @@ class Flat(Property):
                 f"Liczba pokoi: {self.rooms}\n"
                 f"Piętro: {self.floor}\n"
                 f"Cena: {self.price} zł")
+
 
 h1 = House(250, 5, 25000000, "Katowice, ul. Orzechowa 67", 250)
 f1 = Flat(80, 4, 750000, "Czeladź, ul. Miła 8", "parter")

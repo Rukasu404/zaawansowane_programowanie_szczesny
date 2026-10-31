@@ -3,7 +3,8 @@ from zad_1 import Student
 
 
 class Library:
-    def __init__(self, city: str, street: str, zip_code: str, open_hours: str, phone: str):
+    def __init__(self, city: str, street: str, zip_code: str,
+                 open_hours: str, phone: str):
         self.city = city
         self.street = street
         self.zip_code = zip_code
@@ -75,7 +76,8 @@ class Book:
 
 
 class Order:
-    def __init__(self, employee: Employee, student: Student, books: list[Book], order_date: date):
+    def __init__(self, employee: Employee, student: Student,
+                 books: list[Book], order_date: date):
         self.employee = employee
         self.student = student
         self.books = books
@@ -93,8 +95,10 @@ class Order:
                 f"Data złożenia zamówienia: {self.order_date}\n")
 
 
-lib1 = Library("Czeladź", "Reymonta", "41-250", "7.00 - 8.00", "+48 213 742 241")
-lib2 = Library("Katowice", "1 Maja", "40-001", "7.00 - 8.00", "+48 213 202 241")
+lib1 = Library("Czeladź", "Reymonta", "41-250",
+               "7.00 - 8.00", "+48 213 742 241")
+lib2 = Library("Katowice", "1 Maja", "40-001",
+               "7.00 - 8.00", "+48 213 202 241")
 
 b1 = Book(lib1, date(1993, 1, 1), "Andrzej", "Sapkowski", 332)
 b2 = Book(lib1, date(1961, 6, 1), "Stanisław", "Lem", 204)
@@ -102,11 +106,14 @@ b3 = Book(lib2, date(1834, 6, 28), "Adam", "Mickiewicz", 340)
 b4 = Book(lib2, date(1884, 3, 2), "Henryk", "Sienkiewicz", 610)
 b5 = Book(lib1, date(1949, 6, 8), "George", "Orwell", 328)
 
-e1 = Employee("Anna", "Kowalska", date(2015, 3, 1), date(1985, 7, 12), "Czeladź", "Szkolna 5", "41-250",
+e1 = Employee("Anna", "Kowalska", date(2015, 3, 1),
+              date(1985, 7, 12), "Czeladź", "Szkolna 5", "41-250",
               "+48 501 234 567")
-e2 = Employee("Piotr", "Nowak", date(2019, 9, 16), date(1992, 11, 3), "Katowice", "Mariacka 10", "40-014",
+e2 = Employee("Piotr", "Nowak", date(2019, 9, 16),
+              date(1992, 11, 3), "Katowice", "Mariacka 10", "40-014",
               "+48 602 345 678")
-e3 = Employee("Marta", "Wiśniewska", date(2022, 1, 10), date(1998, 2, 25), "Sosnowiec", "Warszawska 3",
+e3 = Employee("Marta", "Wiśniewska", date(2022, 1, 10),
+              date(1998, 2, 25), "Sosnowiec", "Warszawska 3",
               "41-200", "+48 703 456 789")
 
 s1 = Student("Kasia", [80, 75, 90, 60])
